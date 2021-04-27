@@ -30,7 +30,7 @@
   background-color: #4CAF50;
 }
 .main{
-  background-image: url("https://www.escueladesarts.com/wp-content/uploads/estilismo-de-moda.jpg");
+  background-image: url("https://i.pinimg.com/originals/3f/c9/e9/3fc9e99e085b3b426d6fa989fb4f2ef0.jpg");
   background-color: #cccccc;
   height: 200px;
   background-position: center;
@@ -70,6 +70,8 @@
 
 #titulo{
   font-size: 50px;
+  color: #111;
+  font-style: bold;
 }
 
 .categorias{
@@ -77,10 +79,26 @@
   justify-content: space-evenly;
 }
 
+#tituloCategorias{
+    text-align: center;
+    margin-left: auto;
+    font-size: 40px;
+    margin-top: 80px;
+    margin-bottom: 50px;
+}
+#textoCategoria{
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
+    font-size: 17px;
+    width: 50%;
+}
+
 .left{
   background-image: url("https://static.massimodutti.net/3/photos/2021/V/0/1/p/6812/902/818/6812902818_2_1_16.jpg?t=1610641586437&impolicy=massimodutti-itxmedium&imwidth=700");
   background-color: #cccccc;
-  height: 200px;
+  height: 400px;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -89,12 +107,13 @@
   color: white;
   padding: 200px;
   font-size: 20px;
+  text-decoration: none;
 }
 
 .mid{
   background-image: url("https://st.mngbcn.com/rcs/pics/static/T8/fotos/S20/87034009_99.jpg?ts=1613645061986&imwidth=637&imdensity=1");
   background-color: #cccccc;
-  height: 200px;
+  height: 400px;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -103,12 +122,13 @@
   color: white;
   padding: 200px;
   font-size: 20px;
+  text-decoration: none;
 }
 
 .right{
   background-image: url("https://st.mngbcn.com/rcs/pics/static/T8/fotos/S20/87010046_01_D8.jpg?ts=1603991034034&imwidth=637&imdensity=1");
   background-color: #cccccc;
-  height: 200px;
+  height: 400px;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -117,6 +137,7 @@
   color: white;
   padding: 200px;
   font-size: 20px;
+  text-decoration: none;
 }
 
 .footer{
