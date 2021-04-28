@@ -77,94 +77,92 @@
   justify-content: space-evenly;
 }
 
+
+#titulo {
+  text-align: center;
+  margin-left: auto;
+  font-size: 75x;
+  margin-top: 80px;
+  margin-bottom: 50px;
+}
+
+.ofertasTable {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.ofertasButton {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+  size: 100px;
+}
+
 .firstLeft{
   background-image: url("https://www.escueladesarts.com/wp-content/uploads/estilismo-de-moda.jpg");
   background-color: #cccccc;
-  height: 200px;
-  background-position: center;
+  height: 100px;
   background-repeat: no-repeat;
   background-size: cover;
-  position: relative;
-  text-align: center;
   color: white;
   padding: 200px;
   font-size: 20px;
+  margin-right: 50px;
 }
 
 .firstMid{
   background-image: url("https://www.escueladesarts.com/wp-content/uploads/estilismo-de-moda.jpg");
   background-color: #cccccc;
-  height: 200px;
-  background-position: center;
+  height: 100px;
   background-repeat: no-repeat;
   background-size: cover;
-  position: relative;
-  text-align: center;
   color: white;
   padding: 200px;
   font-size: 20px;
+  margin-right: 50px;
 }
 
 .firstRight{
   background-image: url("https://www.escueladesarts.com/wp-content/uploads/estilismo-de-moda.jpg");
   background-color: #cccccc;
-  height: 200px;
-  background-position: center;
+  height: 100px;
   background-repeat: no-repeat;
   background-size: cover;
-  position: relative;
-  text-align: center;
   color: white;
   padding: 200px;
   font-size: 20px;
 }
 
-.secondLeft{
-  background-image: url("https://www.escueladesarts.com/wp-content/uploads/estilismo-de-moda.jpg");
-  background-color: #cccccc;
-  height: 200px;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
-  text-align: center;
-  color: white;
-  padding: 200px;
-  font-size: 20px;
-}
-
-.secondRight{
-  background-image: url("https://www.escueladesarts.com/wp-content/uploads/estilismo-de-moda.jpg");
-  background-color: #cccccc;
-  height: 200px;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
-  text-align: center;
-  color: white;
-  padding: 200px;
-  font-size: 20px;
+.ofertasCarousel {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 50px;
 }
 
 .footer{
-    text-align: center;
-    padding: 20px;
-    background: rgba(19, 35, 47, .9);
-    position: relative;
-    bottom: 0;
+  text-align: center;
+  padding: 20px;
+  background: rgba(19, 35, 47, .9);
+  position: relative;
+  bottom: 0;
 }
 
 .footer li{
-    list-style: none;
-    display: inline-block;
-    border-right: 3px solid white;
-    padding: 0px 7px;
-    font-size: 17px;
+  list-style: none;
+  display: inline-block;
+  border-right: 3px solid white;
+  padding: 0px 7px;
+  font-size: 17px;
 }
 
 .footer li:last-child{
-    border-right: none;
+  border-right: none;
 }
 
 .footer li a {
