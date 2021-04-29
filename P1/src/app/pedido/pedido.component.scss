@@ -76,10 +76,22 @@
   margin-top: 16px;
 }
 
+.flex-container-pedido{
+    display: flex;
+    flex-direction: row;
+}
+
+.flex-noResumen{
+    flex: 7;
+}
+
+.flex-Resumen{
+    flex: 3;
+}
+
 .detallesEnvio{
     display: flex;
     flex-direction: column;
-    align-items: baseline;
 }
 
 .envios{
@@ -90,11 +102,32 @@
     min-width: 100%;
 }
 
+.two-fields input{
+    width: 50% !important;
+}
+
+.two-fields .mat-form-field{
+    width: 40%;
+    margin: 20px;
+}
+
+.mat-form-field{
+    width: calc(80% + 40px);
+    margin: 20px;
+}
+
 .pagos{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-evenly;
-    
+}
+
+.card-radioButton{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 80%;
+    margin: 20px;
 }
 
 .footer{

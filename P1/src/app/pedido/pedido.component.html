@@ -26,120 +26,161 @@
 <body>
     <mat-horizontal-stepper [linear]="false" #stepper>
         <mat-step [stepControl]="firstFormGroup">
-            <h1>Tus productos</h1>
-            <form [formGroup]="firstFormGroup">
-                <ng-template matStepLabel>Vista previa</ng-template>
-                <mat-form-field>
-                    <mat-label>Name</mat-label>
-                    <input matInput placeholder="Last name, First name" formControlName="firstCtrl" required>
-                </mat-form-field>
-                <div>
-                    <button mat-button matStepperNext>Siguiente</button>
-                    <button mat-button>Cancelar</button>
+            <div class="flex-container-pedido">
+                <div class="flex-noResumen">
+                    <h1>Tus productos</h1>
+                    <form [formGroup]="firstFormGroup">
+                        <ng-template matStepLabel>Vista previa</ng-template>
+                        <mat-form-field>
+                            <mat-label>Name</mat-label>
+                            <input matInput placeholder="Last name, First name" formControlName="firstCtrl" required>
+                        </mat-form-field>
+                        <div>
+                            <button mat-button matStepperNext>Siguiente</button>
+                            <button mat-button>Cancelar</button>
+                        </div>
+                    </form>
                 </div>
-            </form>
+                <div class="flex-Resumen">
+                    <h1>Resumen</h1>
+                </div>
+            </div>
+
         </mat-step>
-        <!-- #docregion label -->
         <mat-step [stepControl]="secondFormGroup" label="Detalles de envío">
-            <h1>Detalles de envío</h1>
-            <form [formGroup]="secondFormGroup" class="detallesEnvio">
-                <mat-form-field>
-                    <mat-label>Nombre</mat-label>
-                    <input matInput formControlName="secondCtrl" placeholder="Nombre" required>
-                </mat-form-field>
-                <mat-form-field>
-                    <mat-label>Apellido</mat-label>
-                    <input matInput formControlName="secondCtrl" placeholder="Apellido" required>
-                </mat-form-field>
-                <mat-form-field>
-                    <mat-label>Dirección 1</mat-label>
-                    <input matInput formControlName="secondCtrl" placeholder="Dirección 1" required>
-                </mat-form-field>
-                <mat-form-field>
-                    <mat-label>Dirección 2</mat-label>
-                    <input matInput formControlName="secondCtrl" placeholder="Dirección 2" required>
-                </mat-form-field>
-                <mat-form-field>
-                    <mat-label>Pais</mat-label>
-                    <input matInput formControlName="secondCtrl" placeholder="Dirección 2" required>
-                </mat-form-field>
-                <mat-form-field>
-                    <mat-label>Ciudad</mat-label>
-                    <input matInput formControlName="secondCtrl" placeholder="Dirección 2" required>
-                </mat-form-field>
-                <mat-form-field>
-                    <mat-label>Código postal</mat-label>
-                    <input matInput formControlName="secondCtrl" placeholder="Dirección 2" required>
-                </mat-form-field>
-                <mat-form-field>
-                    <mat-label>Número de tlf</mat-label>
-                    <input matInput formControlName="secondCtrl" placeholder="Dirección 2" required>
-                </mat-form-field>
-                <div>
-                    <mat-radio-group aria-label="Select an option" class="envios">
-                        <mat-card class="envio">
-                            <mat-radio-button value="1"></mat-radio-button>
-                            <img mat-card-image
-                                src="https://informacionlogistica.com/wp-content/uploads/2018/05/enviogratis.png"
-                                alt="Photo">
-                            <mat-card-header>
-                                <mat-card-title>Envio gratis</mat-card-title>
-                            </mat-card-header>
-                            <mat-card-content>
-                                <p>
-                                    Entre 2 y 3 días laborables
-                                </p>
-                            </mat-card-content>
-                        </mat-card>
-                        <mat-card class="envio">
-                            <mat-radio-button value="2"></mat-radio-button>
-                            <img mat-card-image
-                                src="https://lh3.googleusercontent.com/proxy/AUHwR-CnkPqEPYlLXP-NVY4-jUjL4KEaB3h_NrKyp5gx5dik7emzdNknlCI-8A-b1a4Ilh7ZZh3IPeO88ElJTSPr2Nn2hUkxzDfUi6CYeKv1iCHh2IsIAjlNMCCV"
-                                alt="Photo">
-                            <mat-card-header>
-                                <mat-card-title>Envio express</mat-card-title>
-                            </mat-card-header>
-                            <mat-card-content>
-                                <p>
-                                    24 horas despues de realizar el pedido
-                                </p>
-                            </mat-card-content>
-                        </mat-card>
-                    </mat-radio-group>
+            <div class="flex-container-pedido">
+                <div class="flex-noResumen">
+                    <h1>Detalles de envío</h1>
+                    <form [formGroup]="secondFormGroup" class="detallesEnvio">
+                        <div class="form-group two-fields">
+                            <mat-form-field>
+                                <mat-label>Nombre</mat-label>
+                                <input matInput formControlName="secondCtrl" placeholder="Nombre" required>
+                            </mat-form-field>
+                            <mat-form-field>
+                                <mat-label>Apellido</mat-label>
+                                <input matInput formControlName="secondCtrl" placeholder="Apellido" required>
+                            </mat-form-field>
+                        </div>
+                        <mat-form-field>
+                            <mat-label>Dirección 1</mat-label>
+                            <input matInput formControlName="secondCtrl" placeholder="Dirección 1" required>
+                        </mat-form-field>
+                        <mat-form-field>
+                            <mat-label>Dirección 2</mat-label>
+                            <input matInput formControlName="secondCtrl" placeholder="Dirección 2">
+                        </mat-form-field>
+                        <div class="form-group two-fields">
+                            <mat-form-field>
+                                <mat-label>Pais</mat-label>
+                                <input matInput formControlName="secondCtrl" placeholder="Pais" required>
+                            </mat-form-field>
+                            <mat-form-field>
+                                <mat-label>Ciudad</mat-label>
+                                <input matInput formControlName="secondCtrl" placeholder="Ciudad" required>
+                            </mat-form-field>
+                        </div>
+                        <div class="form-group two-fields">
+                            <mat-form-field>
+                                <mat-label>Código postal</mat-label>
+                                <input matInput formControlName="secondCtrl" placeholder="Codigo postal" required>
+                            </mat-form-field>
+                            <mat-form-field>
+                                <mat-label>Número de tlf</mat-label>
+                                <input matInput formControlName="secondCtrl" placeholder="Telefono" required>
+                            </mat-form-field>
+                        </div>
+                        <div>
+                            <mat-radio-group aria-label="Select an option" class="envios">
+                                <mat-card class="card-radioButton">
+                                    <mat-radio-button value="1" checked></mat-radio-button>
+                                    <mat-card-header>
+                                        <mat-card-title>Envio gratis</mat-card-title>
+                                    </mat-card-header>
+                                    <mat-card-content>
+                                        <p>
+                                            Entre 2 y 3 días laborables
+                                        </p>
+                                    </mat-card-content>
+                                </mat-card>
+                                <mat-card class="card-radioButton">
+                                    <mat-radio-button value="2"></mat-radio-button>
+                                    <mat-card-header>
+                                        <mat-card-title>Envio express</mat-card-title>
+                                    </mat-card-header>
+                                    <mat-card-content>
+                                        <p>
+                                            24 horas despues de realizar el pedido
+                                        </p>
+                                    </mat-card-content>
+                                </mat-card>
+                            </mat-radio-group>
+                        </div>
+                    </form>
                 </div>
-                <div>
-                    <button mat-button matStepperPrevious>Back</button>
-                    <button mat-button matStepperNext>Next</button>
+                <div class="flex-Resumen">
+                    <h1 style="margin-left: 20px;">Resumen</h1>
                 </div>
-            </form>
-        </mat-step>
-        <mat-step>
-            <h1>Método de pago</h1>
-            <ng-template matStepLabel>Opciones de pago</ng-template>
-            <div>
-                <mat-radio-group aria-label="Select an option" class="pagos">
-                    <mat-card class="envio">
-                        <mat-radio-button value="1"></mat-radio-button>
-                        <mat-card-header>
-                            <mat-card-title>Paypal</mat-card-title>
-                        </mat-card-header>
-                        <img mat-card-image
-                            src="https://www.actualidadecommerce.com/wp-content/uploads/2020/10/paypal.png" alt="Photo">
-                    </mat-card>
-                    <mat-card class="envio">
-                        <mat-radio-button value="2"></mat-radio-button>
-                        <mat-card-header>
-                            <mat-card-title>Tarjeta de credito</mat-card-title>
-                        </mat-card-header>
-                        <mat-card-content>
-                            <p>Tarjeta</p>
-                        </mat-card-content>
-                    </mat-card>
-                </mat-radio-group>
             </div>
             <div>
-                <button mat-button matStepperPrevious>Back</button>
-                <button mat-button (click)="stepper.reset()">Reset</button>
+                <button mat-button matStepperNext>Siguiente</button>
+                <button mat-button matStepperPrevious>Cancelar</button>
+            </div>
+        </mat-step>
+        <mat-step>
+            <div class="flex-container-pedido">
+                <div class="flex-noResumen">
+                    <h1>Método de pago</h1>
+                    <ng-template matStepLabel>Opciones de pago</ng-template>
+                    <div>
+                        <mat-radio-group aria-label="Select an option" class="pagos">
+                            <mat-card class="card-radioButton">
+                                <mat-radio-button value="1"></mat-radio-button>
+                                <mat-card-header>
+                                    <mat-card-title>Paypal</mat-card-title>
+                                </mat-card-header>
+                                <mat-card-content>
+                                    <img src="https://www.actualidadecommerce.com/wp-content/uploads/2020/10/paypal.png"
+                                        alt="Photo" width="100px">
+                                </mat-card-content>
+                            </mat-card>
+                            <mat-card class="card-radioButton">
+                                <mat-radio-button value="2" checked></mat-radio-button>
+                                <mat-card-header>
+                                    <mat-card-title>Tarjeta de credito</mat-card-title>
+                                </mat-card-header>
+                                <mat-card-content>
+                                    <mat-icon>credit_card</mat-icon>
+                                </mat-card-content>
+                            </mat-card>
+                            <mat-card class="card-radioButton">
+                                <mat-radio-button value="3"></mat-radio-button>
+                                <mat-card-header>
+                                    <mat-card-title>Transferencia bancaria</mat-card-title>
+                                </mat-card-header>
+                                <mat-card-content>
+                                    <mat-icon>account_balance</mat-icon>
+                                </mat-card-content>
+                            </mat-card>
+                            <mat-card class="card-radioButton">
+                                <mat-radio-button value="4"></mat-radio-button>
+                                <mat-card-header>
+                                    <mat-card-title>Contrareembolso</mat-card-title>
+                                </mat-card-header>
+                                <mat-card-content>
+                                    <mat-icon>redeem</mat-icon>
+                                </mat-card-content>
+                            </mat-card>
+                        </mat-radio-group>
+                    </div>
+                </div>
+                <div class="flex-Resumen">
+                    <h1 style="margin-left: 20px;">Resumen</h1>
+                </div>
+            </div>
+            <div>
+                <button mat-button (click)="stepper.reset()">Pagar ahora</button>
+                <button mat-button matStepperPrevious>Cancelar</button>
             </div>
         </mat-step>
     </mat-horizontal-stepper>
@@ -151,5 +192,9 @@
             <li><a href="">Tienda</a></li>
             <li><a href="">Ayuda</a></li>
         </ul>
+        <div>
+            <mat-icon>copyright</mat-icon>
+            <p>Tallando</p>
+        </div>
     </footer>
 </body>
