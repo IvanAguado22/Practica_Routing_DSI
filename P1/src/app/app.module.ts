@@ -19,6 +19,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MatCardModule } from '@angular/material/card';
 import { MatRadioModule } from '@angular/material/radio';
 
+import { CarritoService } from './carrito.service';
 
 @NgModule({
   declarations: [
@@ -43,7 +44,7 @@ import { MatRadioModule } from '@angular/material/radio';
     MatRadioModule,
     NgbModule
   ],
-  providers: [],
+  providers: [CarritoService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

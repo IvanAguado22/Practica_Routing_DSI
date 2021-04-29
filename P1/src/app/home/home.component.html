@@ -16,7 +16,7 @@
             <li><a href="">
                     <mat-icon aria-hidden="false" aria-label="Example home icon">account_circle</mat-icon>Iniciar sesion
                 </a></li>
-            <li><a href="">
+            <li><a [routerLink]="['/pedido']">
                     <mat-icon aria-hidden="false" aria-label="Example home icon">search</mat-icon>Buscar
                 </a></li>
         </ul>
@@ -89,7 +89,8 @@
                     <span class="fa fa-star"></span>
                     <span class="fa fa-star"></span>
                     <p class="card-text">XX€</p>
-                    <a href="#" class="btn btn-primary">Comprar ahora</a>
+                    <button class="btn btn-primary" (click)="carritoService.add(carritoService.producto1)">Comprar
+                        ahora</button>
                 </div>
             </div>
             <div class="card" style="width: 18rem;">

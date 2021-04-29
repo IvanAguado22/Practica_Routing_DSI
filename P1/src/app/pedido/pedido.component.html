@@ -43,6 +43,17 @@
                 </div>
                 <div class="flex-Resumen">
                     <h1>Resumen</h1>
+                    <ul>
+                        <li *ngFor="let producto of carritoService.productos">
+                            <div class="card" style="width: 18rem;">
+                                <img [src]="producto.imagen" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">{{producto.nombre}}</h5>
+                                    <p class="card-text">{{producto.precio}}</p>
+                                </div>
+                            </div>
+                        <li>
+                    </ul>
                 </div>
             </div>
 
