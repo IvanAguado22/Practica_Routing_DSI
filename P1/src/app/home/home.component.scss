@@ -188,6 +188,8 @@
 }
 #imgBoletin{
   width: 25%;
+  height: 100%;
+  align-items: center;
 }
 #textoBoletin{
   font-size: 40px;
@@ -240,4 +242,45 @@
 }
 .checked {
   color: orange;
+}
+.productosMobile{
+    display: none;
+}
+
+@media screen and (max-width: 768px) {
+    .productosMobile{
+        display: flex;
+        margin-top: 30px;
+    }
+    .productos{
+        display: none;
+    }
+    .modeloyproductos{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        align-content: center;
+    }
+    #cajaModelo{
+        align-items: center;
+        align-content: center;
+        flex-direction: column;
+        text-align: center;
+        width: 50%;
+    }
+    #tituloModelo{
+        width: 100%;
+    }
+    #imgBoletin{
+        margin-top: 30px;
+    }
+    #textoBoletin{
+        margin-top: 20px;
+    }
+    #search1{
+        width: 100%;
+    }
+    #subBoton{
+        margin-left: 0px;
+    }
 }
