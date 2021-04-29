@@ -6,6 +6,7 @@ import { CarritoService } from '../carrito.service';
   templateUrl: './ofertas.component.html',
   styleUrls: ['./ofertas.component.scss']
 })
+
 export class OfertasComponent implements OnInit {
 
   constructor(public carritoService: CarritoService) { }
