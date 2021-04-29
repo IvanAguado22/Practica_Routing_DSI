@@ -7,16 +7,17 @@
             <li id="ofertas">
                 <p>¡ Ofertas !</p>
             </li>
-            <li><a href="">
-                    <mat-icon aria-hidden="false" aria-label="Example home icon">shopping_cart</mat-icon>Bolsa
+            <li><a [routerLink]="['/pedido']">
+                    <mat-icon aria-hidden="false" aria-label="Example home icon"
+                        matBadge="{{carritoService.productos.length}}">shopping_cart</mat-icon>Bolsa
                 </a></li>
-            <li><a href="">
+            <li><a>
                     <mat-icon aria-hidden="false" aria-label="Example home icon">favorite</mat-icon>Favoritos
                 </a></li>
-            <li><a href="">
+            <li><a>
                     <mat-icon aria-hidden="false" aria-label="Example home icon">account_circle</mat-icon>Iniciar sesion
                 </a></li>
-            <li><a href="">
+            <li><a>
                     <mat-icon aria-hidden="false" aria-label="Example home icon">search</mat-icon>Buscar
                 </a></li>
         </ul>
@@ -31,29 +32,54 @@
                     <h1>Tus productos</h1>
                     <form [formGroup]="firstFormGroup">
                         <ng-template matStepLabel>Vista previa</ng-template>
-                        <mat-form-field>
-                            <mat-label>Name</mat-label>
-                            <input matInput placeholder="Last name, First name" formControlName="firstCtrl" required>
-                        </mat-form-field>
-                        <div>
-                            <button mat-button matStepperNext>Siguiente</button>
-                            <button mat-button>Cancelar</button>
+                        <div class="productosCarrito">
+                            <ul>
+                                <li *ngFor="let producto of carritoService.productos">
+                                    <div class="card mb-3" style="max-width: 90%;">
+                                        <div class="row no-gutters">
+                                            <div class="col-md-4">
+                                                <img [src]="producto.imagen" class="card-img-top imagenVistaPrevia">
+                                            </div>
+                                            <div class="col-md-8">
+                                                <div class="card-body">
+                                                    <h5 class="card-title nombreProducto">{{producto.nombre}}
+                                                    </h5>
+                                                    <p class="card-text">{{producto.precio}}€</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                <li>
+                            </ul>
                         </div>
                     </form>
                 </div>
                 <div class="flex-Resumen">
                     <h1>Resumen</h1>
-                    <ul>
-                        <li *ngFor="let producto of carritoService.productos">
-                            <div class="card" style="width: 18rem;">
-                                <img [src]="producto.imagen" class="card-img-top" alt="...">
-                                <div class="card-body">
-                                    <h5 class="card-title">{{producto.nombre}}</h5>
-                                    <p class="card-text">{{producto.precio}}</p>
-                                </div>
-                            </div>
-                        <li>
-                    </ul>
+                    <mat-divider></mat-divider>
+                    <p></p>
+                    <div class="flex-containter-precio">
+                        <div class="flex-precio">
+                            <h5>SUBTOTAL</h5>
+                            <p>{{carritoService.subtotal | currency:'EUR':'symbol':'1.0-1':'es'}}</p>
+                        </div>
+                        <div class="flex-precio">
+                            <h5>ENVÍO</h5>
+                            <p>GRATIS</p>
+                        </div>
+                        <div class="flex-precio">
+                            <h5>IMPUESTOS</h5>
+                            <p>{{carritoService.IVA | currency:'EUR':'symbol':'1.0-1':'es'}}</p>
+                        </div>
+                        <mat-divider></mat-divider>
+                        <p></p>
+                        <div class="flex-precio">
+                            <h3>TOTAL</h3>
+                            <b>
+                                <p>{{carritoService.total | currency:'EUR':'symbol':'1.0-1':'es'}}</p>
+                            </b>
+                        </div>
+                    </div>
                 </div>
             </div>
 
@@ -105,7 +131,7 @@
                             <mat-radio-group aria-label="Select an option" class="envios">
                                 <mat-card class="card-radioButton">
                                     <mat-radio-button value="1" checked></mat-radio-button>
-                                    <mat-card-header>
+                                    <mat-card-header style="text-align: center;">
                                         <mat-card-title>Envio gratis</mat-card-title>
                                     </mat-card-header>
                                     <mat-card-content>
@@ -116,7 +142,7 @@
                                 </mat-card>
                                 <mat-card class="card-radioButton">
                                     <mat-radio-button value="2"></mat-radio-button>
-                                    <mat-card-header>
+                                    <mat-card-header style="text-align: center;">
                                         <mat-card-title>Envio express</mat-card-title>
                                     </mat-card-header>
                                     <mat-card-content>
@@ -130,7 +156,50 @@
                     </form>
                 </div>
                 <div class="flex-Resumen">
-                    <h1 style="margin-left: 20px;">Resumen</h1>
+                    <h1>Resumen</h1>
+                    <mat-divider></mat-divider>
+                    <p></p>
+                    <div class="productosCarrito">
+                        <ul>
+                            <li *ngFor="let producto of carritoService.productos">
+                                <div class="card mb-3" style="max-width: 540px;">
+                                    <div class="row no-gutters">
+                                        <div class="col-md-4">
+                                            <img [src]="producto.imagen" class="card-img-top" alt="...">
+                                        </div>
+                                        <div class="col-md-8">
+                                            <div class="card-body">
+                                                <h5 class="card-title">{{producto.nombre}}</h5>
+                                                <p class="card-text">{{producto.precio}}€</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            <li>
+                        </ul>
+                    </div>
+                    <div class="flex-containter-precio">
+                        <div class="flex-precio">
+                            <h5>SUBTOTAL</h5>
+                            <p>{{carritoService.subtotal | currency:'EUR':'symbol':'1.0-1':'es'}}</p>
+                        </div>
+                        <div class="flex-precio">
+                            <h5>ENVÍO</h5>
+                            <p>GRATIS</p>
+                        </div>
+                        <div class="flex-precio">
+                            <h5>IMPUESTOS</h5>
+                            <p>{{carritoService.IVA | currency:'EUR':'symbol':'1.0-1':'es'}}</p>
+                        </div>
+                        <mat-divider></mat-divider>
+                        <p></p>
+                        <div class="flex-precio">
+                            <h3>TOTAL</h3>
+                            <b>
+                                <p>{{carritoService.total | currency:'EUR':'symbol':'1.0-1':'es'}}</p>
+                            </b>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div>
@@ -186,7 +255,50 @@
                     </div>
                 </div>
                 <div class="flex-Resumen">
-                    <h1 style="margin-left: 20px;">Resumen</h1>
+                    <h1>Resumen</h1>
+                    <mat-divider></mat-divider>
+                    <p></p>
+                    <div class="productosCarrito">
+                        <ul>
+                            <li *ngFor="let producto of carritoService.productos">
+                                <div class="card mb-3" style="max-width: 540px;">
+                                    <div class="row no-gutters">
+                                        <div class="col-md-4">
+                                            <img [src]="producto.imagen" class="card-img-top" alt="...">
+                                        </div>
+                                        <div class="col-md-8">
+                                            <div class="card-body">
+                                                <h5 class="card-title">{{producto.nombre}}</h5>
+                                                <p class="card-text">{{producto.precio}}€</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            <li>
+                        </ul>
+                    </div>
+                    <div class="flex-containter-precio">
+                        <div class="flex-precio">
+                            <h5>SUBTOTAL</h5>
+                            <p>{{carritoService.subtotal | currency:'EUR':'symbol':'1.0-1':'es'}}</p>
+                        </div>
+                        <div class="flex-precio">
+                            <h5>ENVÍO</h5>
+                            <p>GRATIS</p>
+                        </div>
+                        <div class="flex-precio">
+                            <h5>IMPUESTOS</h5>
+                            <p>{{carritoService.IVA | currency:'EUR':'symbol':'1.0-1':'es'}}</p>
+                        </div>
+                        <mat-divider></mat-divider>
+                        <p></p>
+                        <div class="flex-precio">
+                            <h3>TOTAL</h3>
+                            <b>
+                                <p>{{carritoService.total | currency:'EUR':'symbol':'1.0-1':'es'}}</p>
+                            </b>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div>

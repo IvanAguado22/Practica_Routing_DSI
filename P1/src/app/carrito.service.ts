@@ -5,6 +5,9 @@ import { Injectable } from '@angular/core';
 })
 export class CarritoService {
   productos: any[];
+  subtotal: number = 0;
+  IVA: number = 0;
+  total: number = 0;
 
   constructor() {
     this.productos = [];
@@ -18,7 +21,10 @@ export class CarritoService {
 
   add(product: any) {
     this.productos.push(product);
-    console.log(this.productos)
+    this.subtotal += product.precio;
+    this.IVA = this.subtotal * 0.21;
+    this.total = this.subtotal + this.IVA;
+    alert("Producto añadido al carrito");
   }
 
   get() {

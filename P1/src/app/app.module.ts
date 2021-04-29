@@ -18,8 +18,12 @@ import { MatStepperModule } from '@angular/material/stepper';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MatCardModule } from '@angular/material/card';
 import { MatRadioModule } from '@angular/material/radio';
+import { MatDividerModule } from '@angular/material/divider';
+import { MatBadgeModule } from '@angular/material/badge';
 
 import { CarritoService } from './carrito.service';
+import { LOCALE_ID } from '@angular/core';
+import '@angular/common/locales/global/es';
 
 @NgModule({
   declarations: [
@@ -42,9 +46,11 @@ import { CarritoService } from './carrito.service';
     MatInputModule,
     MatCardModule,
     MatRadioModule,
+    MatDividerModule,
+    MatBadgeModule,
     NgbModule
   ],
-  providers: [CarritoService],
+  providers: [CarritoService, { provide: LOCALE_ID, useValue: 'es' }],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
