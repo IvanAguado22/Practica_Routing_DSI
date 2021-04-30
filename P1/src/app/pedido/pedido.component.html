@@ -306,7 +306,7 @@
                 </div>
             </div>
             <div>
-                <button mat-button (click)="stepper.reset()">Pagar ahora</button>
+                <button mat-button (click)="stepper.reset(); carritoService.pagar()">Pagar ahora</button>
                 <button mat-button matStepperPrevious>Cancelar</button>
             </div>
         </mat-step>
