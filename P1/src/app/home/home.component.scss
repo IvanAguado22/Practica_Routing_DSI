@@ -257,7 +257,7 @@
     display: none;
 }
 
-@media screen and (max-width: 830px) {
+@media screen and (max-width: 1024px) {
     .productosMobile {
         display   : flex;
         margin-top: 30px;
@@ -333,5 +333,13 @@
 
     #botonBuscar {
         margin-left: auto;
+    }
+    .main{
+        padding: 0%;
+    }
+    #titulo {
+        font-size : 250%;
+        color     : #111;
+        font-style: bold;
     }
 }

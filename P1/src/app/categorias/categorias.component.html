@@ -5,7 +5,7 @@
                 <a [routerLink]="['/']">T</a>
             </li>
             <li id="ofertas">
-                <a [routerLink]="['/ofertas']">¡ Ofertas !</a>
+                <a [routerLink]="['/categorias']">¡ Ofertas !</a>
             </li>
             <li><a [routerLink]="['/pedido']">
                     <mat-icon aria-hidden="false" aria-label="Example home icon"
@@ -31,22 +31,22 @@
 <div class="categorias">
     <a href="">
         <div class="left">
-            <p>Camisetas</p>
+            <a [routerLink]="['/ofertas']"><button type="button" class="btn btn-dark">Camisetas</button></a>
         </div>
     </a>
     <a href="">
         <div class="mid">
-            <p>Pantalones</p>
+            <a [routerLink]="['/ofertas']"><button type="button" class="btn btn-dark">Pantalones</button></a>
         </div>
     </a>
     <a href="">
         <div class="mid">
-            <p>Calzado</p>
+            <a [routerLink]="['/ofertas']"><button type="button" class="btn btn-dark">Calzado</button></a>
         </div>
     </a>
     <a href="">
         <div class="right">
-            <p>Abrigos</p>
+            <a [routerLink]="['/ofertas']"><button type="button" class="btn btn-dark">Abrigos</button></a>
         </div>
     </a>
 </div>
