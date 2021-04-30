@@ -160,11 +160,6 @@
   padding: 14px 16px;
   text-decoration: none;
 }
-#search{
-  width: 350px;
-  height: 20px;
-  margin-right: auto;
-}
 #tituloCategorias{
   text-align: center;
   margin-left: auto;
@@ -247,7 +242,7 @@
     display: none;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 830px) {
     .productosMobile{
         display: flex;
         margin-top: 30px;
@@ -282,5 +277,37 @@
     }
     #subBoton{
         margin-left: 0px;
+    }
+    .categorias{
+        justify-content: flex-start;
+        align-items: center;
+        flex-direction: column;
+    }
+    .left{
+        position: flex-start;
+        width: 90%;
+    }
+    .mid{
+        position: flex-start;
+        width: 90%;
+        margin-top: 30px;
+    }
+    .right{
+        position: flex-start;
+        width: 90%;
+        margin-top: 30px;
+    }
+    #searchBar{
+        position: relative;
+        width: 90%;
+        min-width: 120px;
+    }
+    #botonBuscar{
+        margin-left: auto;
+    }
+    .main{
+        text-align: none;
+        align-items: center;
+        content-items: center;
     }
 }
