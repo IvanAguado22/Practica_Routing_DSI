@@ -62,68 +62,63 @@
         </div>
         <div class="productos">
             <div class="card" style="width: 18rem;">
-                <img src="https://images.footlocker.com/is/image/FLEU/317135040020_01?wid=630&hei=630&fmt=png-alpha"
-                    class="card-img-top" alt="...">
+                <img [src]="carritoService.producto1.imagen" class="card-img-top" alt="...">
                 <div class="card-body">
-                    <h5 class="card-title">TITULO PRODUCTO</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                        card's content.</p>
+                    <h5 class="card-title">{{carritoService.producto1.nombre}}</h5>
+                    <p class="card-text">{{carritoService.producto1.descripcion}}</p>
                     <span class="fa fa-star checked"></span>
                     <span class="fa fa-star checked"></span>
                     <span class="fa fa-star checked"></span>
                     <span class="fa fa-star checked"></span>
                     <span class="fa fa-star"></span>
-                    <p class="card-text">XX€</p>
-                    <a href="#" class="btn btn-primary">Comprar ahora</a>
-                </div>
-            </div>
-            <div class="card" style="width: 18rem;">
-                <img src="https://images.footlocker.com/is/image/FLEU/317982633080_01?wid=630&hei=630&fmt=png-alpha"
-                    class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title">TITULO PRODUCTO</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                        card's content.</p>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star"></span>
-                    <span class="fa fa-star"></span>
-                    <p class="card-text">XX€</p>
+                    <p class="card-text">{{carritoService.producto1.precio | currency:'EUR':'symbol':'1.0-1':'es'}}</p>
                     <button class="btn btn-primary" (click)="carritoService.add(carritoService.producto1)">Comprar
                         ahora</button>
                 </div>
             </div>
             <div class="card" style="width: 18rem;">
-                <img src="https://images.footlocker.com/is/image/FLEU/317983357210_01?wid=630&hei=630&fmt=png-alpha"
-                    class="card-img-top" alt="...">
+                <img [src]="carritoService.producto2.imagen" class="card-img-top" alt="...">
                 <div class="card-body">
-                    <h5 class="card-title">TITULO PRODUCTO</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                        card's content.</p>
+                    <h5 class="card-title">{{carritoService.producto2.nombre}}</h5>
+                    <p class="card-text">{{carritoService.producto2.descripcion}}</p>
                     <span class="fa fa-star checked"></span>
                     <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
                     <span class="fa fa-star"></span>
                     <span class="fa fa-star"></span>
-                    <span class="fa fa-star"></span>
-                    <p class="card-text">XX€</p>
-                    <a href="#" class="btn btn-primary">Comprar ahora</a>
+                    <p class="card-text">{{carritoService.producto2.precio | currency:'EUR':'symbol':'1.0-1':'es'}}</p>
+                    <button class="btn btn-primary" (click)="carritoService.add(carritoService.producto2)">Comprar
+                        ahora</button>
                 </div>
             </div>
             <div class="card" style="width: 18rem;">
-                <img src="https://images.footlocker.com/is/image/FLEU/317351340210_01?wid=630&hei=630&fmt=png-alpha"
-                    class="card-img-top" alt="...">
+                <img [src]="carritoService.producto3.imagen" class="card-img-top" alt="...">
                 <div class="card-body">
-                    <h5 class="card-title">TITULO PRODUCTO</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                        card's content.</p>
+                    <h5 class="card-title">{{carritoService.producto3.nombre}}</h5>
+                    <p class="card-text">{{carritoService.producto3.descripcion}}</p>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                    <p class="card-text">{{carritoService.producto3.precio | currency:'EUR':'symbol':'1.0-1':'es'}}</p>
+                    <button class="btn btn-primary" (click)="carritoService.add(carritoService.producto3)">Comprar
+                        ahora</button>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <img [src]="carritoService.producto4.imagen" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">{{carritoService.producto4.nombre}}</h5>
+                    <p class="card-text">{{carritoService.producto4.descripcion}}</p>
                     <span class="fa fa-star checked"></span>
                     <span class="fa fa-star checked"></span>
                     <span class="fa fa-star checked"></span>
                     <span class="fa fa-star checked"></span>
                     <span class="fa fa-star checked"></span>
-                    <p class="card-text">XX€</p>
-                    <a href="#" class="btn btn-primary">Comprar ahora</a>
+                    <p class="card-text">{{carritoService.producto4.precio | currency:'EUR':'symbol':'1.0-1':'es'}}</p>
+                    <button class="btn btn-primary" (click)="carritoService.add(carritoService.producto4)">Comprar
+                        ahora</button>
                 </div>
             </div>
         </div>
@@ -131,85 +126,77 @@
             <ngb-carousel>
                 <ng-template ngbSlide>
                     <div class="card" style="width: 18rem;">
-                        <img src="https://images.footlocker.com/is/image/FLEU/317135040020_01?wid=630&hei=630&fmt=png-alpha"
-                            class="card-img-top" alt="...">
+                        <img [src]="carritoService.producto1.imagen" class="card-img-top" alt="...">
                         <div class="card-body">
-                            <h5 class="card-title">TITULO PRODUCTO</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
-                                of
-                                the
-                                card's content.</p>
+                            <h5 class="card-title">{{carritoService.producto1.nombre}}</h5>
+                            <p class="card-text">{{carritoService.producto1.descripcion}}</p>
                             <span class="fa fa-star checked"></span>
                             <span class="fa fa-star checked"></span>
                             <span class="fa fa-star checked"></span>
                             <span class="fa fa-star checked"></span>
                             <span class="fa fa-star"></span>
-                            <p class="card-text">XX€</p>
-                            <a href="#" class="btn btn-primary">Comprar ahora</a>
-                        </div>
-                    </div>
-                </ng-template>
-                <ng-template ngbSlide>
-                    <div class="card" style="width: 18rem;">
-                        <img src="https://images.footlocker.com/is/image/FLEU/317982633080_01?wid=630&hei=630&fmt=png-alpha"
-                            class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">TITULO PRODUCTO</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
-                                of
-                                the
-                                card's content.</p>
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star"></span>
-                            <span class="fa fa-star"></span>
-                            <p class="card-text">XX€</p>
+                            <p class="card-text">{{carritoService.producto1.precio |
+                                currency:'EUR':'symbol':'1.0-1':'es'}}</p>
                             <button class="btn btn-primary"
                                 (click)="carritoService.add(carritoService.producto1)">Comprar
                                 ahora</button>
                         </div>
                     </div>
                 </ng-template>
-
                 <ng-template ngbSlide>
                     <div class="card" style="width: 18rem;">
-                        <img src="https://images.footlocker.com/is/image/FLEU/317983357210_01?wid=630&hei=630&fmt=png-alpha"
-                            class="card-img-top" alt="...">
+                        <img [src]="carritoService.producto2.imagen" class="card-img-top" alt="...">
                         <div class="card-body">
-                            <h5 class="card-title">TITULO PRODUCTO</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
-                                of
-                                the
-                                card's content.</p>
+                            <h5 class="card-title">{{carritoService.producto2.nombre}}</h5>
+                            <p class="card-text">{{carritoService.producto2.descripcion}}</p>
+                            <span class="fa fa-star checked"></span>
                             <span class="fa fa-star checked"></span>
                             <span class="fa fa-star checked"></span>
                             <span class="fa fa-star"></span>
                             <span class="fa fa-star"></span>
-                            <span class="fa fa-star"></span>
-                            <p class="card-text">XX€</p>
-                            <a href="#" class="btn btn-primary">Comprar ahora</a>
+                            <p class="card-text">{{carritoService.producto2.precio |
+                                currency:'EUR':'symbol':'1.0-1':'es'}}</p>
+                            <button class="btn btn-primary"
+                                (click)="carritoService.add(carritoService.producto2)">Comprar
+                                ahora</button>
                         </div>
                     </div>
                 </ng-template>
-
                 <ng-template ngbSlide>
                     <div class="card" style="width: 18rem;">
-                        <img src="https://images.footlocker.com/is/image/FLEU/317351340210_01?wid=630&hei=630&fmt=png-alpha"
-                            class="card-img-top" alt="...">
+                        <img [src]="carritoService.producto3.imagen" class="card-img-top" alt="...">
                         <div class="card-body">
-                            <h5 class="card-title">TITULO PRODUCTO</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
-                                of
-                                the
-                                card's content.</p>
+                            <h5 class="card-title">{{carritoService.producto3.nombre}}</h5>
+                            <p class="card-text">{{carritoService.producto3.descripcion}}</p>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span>
+                            <p class="card-text">{{carritoService.producto3.precio |
+                                currency:'EUR':'symbol':'1.0-1':'es'}}</p>
+                            <button class="btn btn-primary"
+                                (click)="carritoService.add(carritoService.producto3)">Comprar
+                                ahora</button>
+                        </div>
+                    </div>
+                </ng-template>
+                <ng-template ngbSlide>
+                    <div class="card" style="width: 18rem;">
+                        <img [src]="carritoService.producto4.imagen" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">{{carritoService.producto4.nombre}}</h5>
+                            <p class="card-text">{{carritoService.producto4.descripcion}}</p>
                             <span class="fa fa-star checked"></span>
                             <span class="fa fa-star checked"></span>
                             <span class="fa fa-star checked"></span>
                             <span class="fa fa-star checked"></span>
                             <span class="fa fa-star checked"></span>
-                            <p class="card-text">XX€</p>
-                            <a href="#" class="btn btn-primary">Comprar ahora</a>
+                            <p class="card-text">{{carritoService.producto4.precio |
+                                currency:'EUR':'symbol':'1.0-1':'es'}}</p>
+                            <button class="btn btn-primary"
+                                (click)="carritoService.add(carritoService.producto4)">Comprar
+                                ahora</button>
                         </div>
                     </div>
                 </ng-template>
@@ -218,10 +205,10 @@
     </div>
     <footer class="footer">
         <ul>
-            <li><a href="">Inicio</a></li>
-            <li><a href="">Acerca de</a></li>
-            <li><a href="">Tienda</a></li>
-            <li><a href="">Ayuda</a></li>
+            <li><a [routerLink]="['/']">Inicio</a></li>
+            <li><a>Acerca de</a></li>
+            <li><a>Tienda</a></li>
+            <li><a>Ayuda</a></li>
         </ul>
     </footer>
 </body>

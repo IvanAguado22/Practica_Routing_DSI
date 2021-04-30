@@ -44,7 +44,8 @@
                                                 <div class="card-body">
                                                     <h5 class="card-title nombreProducto">{{producto.nombre}}
                                                     </h5>
-                                                    <p class="card-text">{{producto.precio}}€</p>
+                                                    <p class="card-text">{{producto.precio |
+                                                        currency:'EUR':'symbol':'1.0-1':'es'}}</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -310,14 +311,10 @@
 
     <footer class="footer">
         <ul>
-            <li><a href="">Inicio</a></li>
-            <li><a href="">Acerca de</a></li>
-            <li><a href="">Tienda</a></li>
-            <li><a href="">Ayuda</a></li>
+            <li><a [routerLink]="['/']">Inicio</a></li>
+            <li><a>Acerca de</a></li>
+            <li><a>Tienda</a></li>
+            <li><a>Ayuda</a></li>
         </ul>
-        <div>
-            <mat-icon>copyright</mat-icon>
-            <p>Tallando</p>
-        </div>
     </footer>
 </body>
