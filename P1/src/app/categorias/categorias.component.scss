@@ -49,9 +49,10 @@
   align-content: center;
   margin-left: 25px;
   margin-top: 25px;
+  margin-bottom: 25px;
 }
 
-#logoCorp p{
+#logoCorp a{
   font-size: 50px;
 }
 
@@ -166,4 +167,86 @@
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
+}
+
+ /* 
+ * TABLET
+ */
+@media screen and (max-width: 768px) {
+  .menu ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+.menu li {
+  float: right;
+}
+
+.menu li a {
+  display: flex;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  align-items: center;
+  flex-direction: column;
+  cursor: pointer;
+  min-width: 80px;
+}
+
+.menu li a:hover:not(.active) {
+  background-color: #111;
+}
+
+.menu .active {
+  background-color: #4CAF50;
+}
+.main{
+  background-image: url("https://i.pinimg.com/originals/3f/c9/e9/3fc9e99e085b3b426d6fa989fb4f2ef0.jpg");
+  background-color: #cccccc;
+  height: 200px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  text-align: center;
+  color: white;
+  padding: 200px;
+}
+
+#logoCorp{
+  float: left;
+  color: white;
+  text-align: center;
+  align-content: center;
+  margin-left: 25px;
+  margin-top: 25px;
+}
+
+#logoCorp p{
+  font-size: 50px;
+}
+
+#ofertas{
+  float: left;
+  color: white;
+  text-align: center;
+  align-content: center;
+  margin-left: 50px;
+  margin-top: 25px;
+}
+
+#ofertas p{
+  font-size: 20px;
+}
+}
+
+
+ /* 
+ * MOVIL
+ */
+@media screen and (max-width: 600px){
 }
