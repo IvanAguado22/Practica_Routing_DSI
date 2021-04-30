@@ -1,305 +1,337 @@
 .menu ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: #333;
+    list-style-type : none;
+    margin          : 0;
+    padding         : 0;
+    overflow        : hidden;
+    background-color: #333;
 }
 
 .menu li {
-  float: right;
+    float: right;
 }
 
-#ofertas{
-  float: left;
-  color: white;
-  text-align: center;
-  align-content: center;
-  margin-left: 50px;
-  margin-top: 25px;
+#ofertas {
+    float        : left;
+    color        : white;
+    text-align   : center;
+    align-content: center;
+    margin-left  : 50px;
+    margin-top   : 25px;
 }
 
-#ofertas p{
-  font-size: 20px;
+#ofertas p {
+    font-size: 20px;
 }
+
 .menu li a {
-  display: flex;
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  align-items: center;
-  flex-direction: column;
-  cursor: pointer;
-  min-width: 80px;
+    display        : flex;
+    color          : white;
+    text-align     : center;
+    padding        : 14px 16px;
+    text-decoration: none;
+    align-items    : center;
+    flex-direction : column;
+    cursor         : pointer;
+    min-width      : 80px;
 }
 
 .menu li a:hover:not(.active) {
-  background-color: #111;
+    background-color: #111;
 }
 
 .menu .active {
-  background-color: #4CAF50;
+    background-color: #4CAF50;
 }
 
-#logoCorp{
-  float: left;
-  color: white;
-  text-align: center;
-  align-content: center;
-  margin-left: 25px;
-  margin-top: 25px;
-  margin-bottom: 25px;
+#logoCorp {
+    float        : left;
+    color        : white;
+    text-align   : center;
+    align-content: center;
+    margin-left  : 25px;
+    margin-top   : 25px;
+    margin-bottom: 25px;
 }
 
-#logoCorp a{
-  font-size: 50px;
+#logoCorp a {
+    font-size: 50px;
 }
 
-#ofertas{
-  float: left;
-  color: white;
-  text-align: center;
-  align-content: center;
-  margin-left: 50px;
-  margin-top: 25px;
+#ofertas {
+    float        : left;
+    color        : white;
+    text-align   : center;
+    align-content: center;
+    margin-left  : 50px;
+    margin-top   : 25px;
 }
 
-.main{
-  background-image: url("https://i.pinimg.com/originals/3f/c9/e9/3fc9e99e085b3b426d6fa989fb4f2ef0.jpg");
-  background-color: #cccccc;
-  height: 200px;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
-  text-align: center;
-  color: white;
-  padding: 200px;
+.main {
+    background-image   : url("https://i.pinimg.com/originals/3f/c9/e9/3fc9e99e085b3b426d6fa989fb4f2ef0.jpg");
+    background-color   : #cccccc;
+    height             : 200px;
+    background-position: center;
+    background-repeat  : no-repeat;
+    background-size    : cover;
+    position           : relative;
+    text-align         : center;
+    color              : white;
+    padding            : 200px;
 }
 
-#titulo{
-  font-size: 50px;
-  color: #111;
-  font-style: bold;
+#titulo {
+    font-size : 50px;
+    color     : #111;
+    font-style: bold;
 }
 
-.categorias{
-  display: flex;
-  justify-content: space-evenly;
-  font-size: 15px;
+.categorias {
+    display        : flex;
+    justify-content: space-evenly;
+    font-size      : 15px;
 }
 
-.left{
-  background-image: url("https://image.freepik.com/foto-gratis/retrato-bella-modelo-sonriente-vestida-pantalones-cortos-verano-hipster-jeans-ropa_158538-3201.jpg");
-  background-color: #cccccc;
-  height: 600px;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
-  text-align: center;
-  color: white;
-  padding: 200px;
+.left {
+    background-image   : url("https://image.freepik.com/foto-gratis/retrato-bella-modelo-sonriente-vestida-pantalones-cortos-verano-hipster-jeans-ropa_158538-3201.jpg");
+    background-color   : #cccccc;
+    height             : 600px;
+    background-position: center;
+    background-repeat  : no-repeat;
+    background-size    : cover;
+    position           : relative;
+    text-align         : center;
+    color              : white;
+    padding            : 200px;
 }
 
-.mid{
-  background-image: url("https://images.footlocker.com/is/image/FLEU/317135040020_01?wid=630&hei=630&fmt=png-alpha");
-  background-color: #cccccc;
-  height: 600px;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
-  text-align: center;
-  color: white;
-  padding: 200px;
+.mid {
+    background-image   : url("https://images.footlocker.com/is/image/FLEU/317135040020_01?wid=630&hei=630&fmt=png-alpha");
+    background-color   : #cccccc;
+    height             : 600px;
+    background-position: center;
+    background-repeat  : no-repeat;
+    background-size    : cover;
+    position           : relative;
+    text-align         : center;
+    color              : white;
+    padding            : 200px;
 }
 
-.right{
-  background-image: url("https://lsco.scene7.com/is/image/lsco/865240007-front-pdp-lse?fmt=jpeg&qlt=70,1&op_sharpen=0&resMode=sharp2&op_usm=0.8,1,10,0&fit=crop,0&wid=450&hei=750");
-  background-color: #cccccc;
-  height: 600px;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
-  text-align: center;
-  color: white;
-  padding: 200px;
+.right {
+    background-image   : url("https://lsco.scene7.com/is/image/lsco/865240007-front-pdp-lse?fmt=jpeg&qlt=70,1&op_sharpen=0&resMode=sharp2&op_usm=0.8,1,10,0&fit=crop,0&wid=450&hei=750");
+    background-color   : #cccccc;
+    height             : 600px;
+    background-position: center;
+    background-repeat  : no-repeat;
+    background-size    : cover;
+    position           : relative;
+    text-align         : center;
+    color              : white;
+    padding            : 200px;
 }
 
-.footer{
-  text-align: center;
-  padding: 20px;
-  background: rgba(19, 35, 47, .9);
-  position: relative;
-  bottom: 0;
-  width: 100%;
+.footer {
+    text-align: center;
+    padding   : 20px;
+    background: rgba(19, 35, 47, .9);
+    position  : relative;
+    bottom    : 0;
+    width     : 100%;
 }
 
-.footer li{
-  list-style: none;
-  display: inline-block;
-  border-right: 3px solid white;
-  padding: 0px 7px;
-  font-size: 17px;
+.footer li {
+    list-style  : none;
+    display     : inline-block;
+    border-right: 3px solid white;
+    padding     : 0px 7px;
+    font-size   : 17px;
 }
 
-.footer li:last-child{
-  border-right: none;
+.footer li:last-child {
+    border-right: none;
 }
 
 .footer li a {
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
+    display        : block;
+    color          : white;
+    text-align     : center;
+    padding        : 14px 16px;
+    text-decoration: none;
 }
-#tituloCategorias{
-  text-align: center;
-  margin-left: auto;
-  font-size: 40px;
-  margin-top: 80px;
-  margin-bottom: 50px;
+
+#tituloCategorias {
+    text-align   : center;
+    margin-left  : auto;
+    font-size    : 40px;
+    margin-top   : 80px;
+    margin-bottom: 50px;
 }
-#textoCategoria{
-  text-align: center;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 50px;
-  font-size: 17px;
-  width: 50%;
+
+#textoCategoria {
+    text-align   : center;
+    margin-left  : auto;
+    margin-right : auto;
+    margin-bottom: 50px;
+    font-size    : 17px;
+    width        : 50%;
 }
-.Boletin{
-  display: flex;
-  justify-content: flex-start;
-  font-size: 15px;
-  padding: 30px;
+
+.Boletin {
+    display        : flex;
+    justify-content: flex-start;
+    font-size      : 15px;
+    padding        : 30px;
 }
-#imgBoletin{
-  width: 25%;
-  height: 100%;
-  align-items: center;
+
+#imgBoletin {
+    width      : 25%;
+    height     : 100%;
+    align-items: center;
 }
-#textoBoletin{
-  font-size: 40px;
-  margin-left: 40px;
-  margin-top: 100px;
+
+#textoBoletin {
+    font-size  : 40px;
+    margin-left: 40px;
+    margin-top : 100px;
 }
-#search1{
-  width: 600px;
-  height: 50px;
-  margin-right: auto;
-  font-size: 20px;
+
+#search1 {
+    width       : 600px;
+    height      : 50px;
+    margin-right: auto;
+    font-size   : 20px;
 }
-#subBoton{
-  width: 150px;
-  height: 55px;
-  margin-left: 40px;
-  background-color: rgb(175, 175, 175);
-  font-size: 20px;
+
+#subBoton {
+    width           : 150px;
+    height          : 55px;
+    margin-left     : 40px;
+    background-color: rgb(175, 175, 175);
+    font-size       : 20px;
 }
-#tituloModelo{
-  font-size: 40px;
+
+#tituloModelo {
+    font-size: 40px;
 }
-#cajaModelo{
-  width: 25%;
+
+#cajaModelo {
+    width: 25%;
 }
-.modeloyproductos{
-  display: flex;
-  justify-content: flex-start;
-  padding: 40px;
+
+.modeloyproductos {
+    display        : flex;
+    justify-content: flex-start;
+    padding        : 40px;
 }
-.productos{
-  display: flex;
-  justify-content: flex-start;
-  margin-left: 100px;
+
+.productos {
+    display        : flex;
+    justify-content: flex-start;
+    margin-left    : 100px;
 }
-.card-title{
-  font-size: 20px;
-  font-weight: bold;
+
+.card-title {
+    font-size  : 20px;
+    font-weight: bold;
 }
-.card{
+
+.card {
     margin-left: 20px;
 }
-#searchBar{
-  width: 500px;
-  border-radius: 50px 50px  50px 50px;
-  height: 40px;
+
+#searchBar {
+    width        : 500px;
+    border-radius: 50px 50px 50px 50px;
+    height       : 40px;
 }
-#botonBuscar{
-  border-radius: 50px 50px  50px 50px;
+
+#botonBuscar {
+    border-radius: 50px 50px 50px 50px;
 }
+
 .checked {
-  color: orange;
+    color: orange;
 }
-.productosMobile{
+
+.productosMobile {
     display: none;
 }
 
 @media screen and (max-width: 830px) {
-    .productosMobile{
-        display: flex;
+    .productosMobile {
+        display   : flex;
         margin-top: 30px;
     }
-    .productos{
+
+    .productos {
         display: none;
     }
-    .modeloyproductos{
-        display: flex;
+
+    .modeloyproductos {
+        display       : flex;
         flex-direction: column;
-        align-items: center;
-        align-content: center;
+        align-items   : center;
+        align-content : center;
     }
-    #cajaModelo{
-        align-items: center;
-        align-content: center;
+
+    #cajaModelo {
+        align-items   : center;
+        align-content : center;
         flex-direction: column;
-        text-align: center;
-        width: 50%;
+        text-align    : center;
+        width         : 50%;
     }
-    #tituloModelo{
+
+    #tituloModelo {
         width: 100%;
     }
-    #imgBoletin{
+
+    #imgBoletin {
         margin-top: 30px;
     }
-    #textoBoletin{
+
+    #textoBoletin {
         margin-top: 20px;
     }
-    #search1{
+
+    #search1 {
         width: 100%;
     }
-    #subBoton{
+
+    #subBoton {
         margin-left: 0px;
     }
-    .categorias{
+
+    .categorias {
         justify-content: flex-start;
-        align-items: center;
-        flex-direction: column;
+        align-items    : center;
+        flex-direction : column;
     }
-    .left{
+
+    .left {
         position: flex-start;
-        width: 90%;
+        width   : 90%;
     }
-    .mid{
-        position: flex-start;
-        width: 90%;
+
+    .mid {
+        position  : flex-start;
+        width     : 90%;
         margin-top: 30px;
     }
-    .right{
-        position: flex-start;
-        width: 90%;
+
+    .right {
+        position  : flex-start;
+        width     : 90%;
         margin-top: 30px;
     }
-    #searchBar{
-        position: relative;
-        width: 90%;
+
+    #searchBar {
+        position : relative;
+        width    : 90%;
         min-width: 120px;
     }
-    #botonBuscar{
+
+    #botonBuscar {
         margin-left: auto;
     }
 }
