@@ -1,26 +1,37 @@
 <header>
-    <nav class="menu">
-        <ul>
-            <li id="logoCorp">
-                <a [routerLink]="['/']">T</a>
-            </li>
-            <li id="ofertas">
-                <a [routerLink]="['/categorias']">¡ Ofertas !</a>
-            </li>
-            <li><a [routerLink]="['/pedido']">
-                    <mat-icon aria-hidden="false" aria-label="Example home icon"
-                        matBadge="{{carritoService.productos.length}}">shopping_cart</mat-icon>Bolsa
-                </a></li>
-            <li><a>
-                    <mat-icon aria-hidden="false" aria-label="Example home icon">favorite</mat-icon>Favoritos
-                </a></li>
-            <li><a>
-                    <mat-icon aria-hidden="false" aria-label="Example home icon">account_circle</mat-icon>Iniciar sesion
-                </a></li>
-            <li><a>
-                    <mat-icon aria-hidden="false" aria-label="Example home icon">search</mat-icon>Buscar
-                </a></li>
-        </ul>
+    <nav class="navbar navbar-expand-md bg-dark navbar-dark fixed-top">
+        <a class="navbar-brand" [routerLink]="['/']">T</a>
+        <a class="navbar-brand" [routerLink]="['/categorias']"> ¡ Ofertas !</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavbar" style="justify-content: flex-end;">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link">
+                        <mat-icon aria-hidden="false" aria-label="Example home icon">search</mat-icon>Buscar
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link">
+                        <mat-icon aria-hidden="false" aria-label="Example home icon">account_circle</mat-icon>Iniciar
+                        sesion
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link">
+                        <mat-icon aria-hidden="false" aria-label="Example home icon">favorite</mat-icon>Favoritos
+                    </a>
+                </li>
+                <li class=" nav-item">
+                    <a class="nav-link" [routerLink]="['/pedido']">
+                        <mat-icon aria-hidden="false" aria-label="Example home icon"
+                            matBadge="{{carritoService.productos.length}}">
+                            shopping_cart</mat-icon>Bolsa
+                    </a>
+                </li>
+            </ul>
+        </div>
     </nav>
 </header>
 

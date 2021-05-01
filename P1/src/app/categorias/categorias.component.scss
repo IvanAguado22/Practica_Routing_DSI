@@ -101,7 +101,7 @@
 .left {
     background-image   : url("https://static.massimodutti.net/3/photos/2021/V/0/1/p/6812/902/818/6812902818_2_1_16.jpg?t=1610641586437&impolicy=massimodutti-itxmedium&imwidth=700");
     background-color   : #cccccc;
-    height             : 400px;
+    height             : 700px;
     background-position: center;
     background-repeat  : no-repeat;
     background-size    : cover;
@@ -116,7 +116,7 @@
 .mid {
     background-image   : url("https://st.mngbcn.com/rcs/pics/static/T8/fotos/S20/87034009_99.jpg?ts=1613645061986&imwidth=637&imdensity=1");
     background-color   : #cccccc;
-    height             : 400px;
+    height             : 700px;
     background-position: center;
     background-repeat  : no-repeat;
     background-size    : cover;
@@ -128,9 +128,9 @@
     text-decoration    : none;
 }
 .mid1 {
-    background-image   : url("https://images11.eitb.eus/multimedia/images/2020/05/03/2599316/20200503173716_zapatos-calzado-oinetakoa_foto610x342.jpg");
+    background-image   : url("https://ae01.alicdn.com/kf/Hd5b65a066a4a42e18c8dcdb4a7e83bf9A/Zapatos-planos-de-malla-transpirable-para-mujer-zapatillas-informales-a-la-moda-vulcanizados-para-gimnasio-2020.jpg_q50.jpg");
     background-color   : #cccccc;
-    height             : 400px;
+    height             : 700px;
     background-position: center;
     background-repeat  : no-repeat;
     background-size    : cover;
@@ -145,7 +145,7 @@
 .right {
     background-image   : url("https://cdn.shopify.com/s/files/1/1631/3281/products/abrigo-marron-largo-mujer-the-are-00001_960x1190_crop_center.jpg?v=1603358531");
     background-color   : #cccccc;
-    height             : 400px;
+    height             : 700px;
     background-position: center;
     background-repeat  : no-repeat;
     background-size    : cover;
@@ -200,6 +200,13 @@
     }
 
     .mid {
+        width      : 90%;
+        margin-left: 5%;
+        height     : 700px;
+        margin-top : 20px;
+    }
+
+    .mid1 {
         width      : 90%;
         margin-left: 5%;
         height     : 700px;
