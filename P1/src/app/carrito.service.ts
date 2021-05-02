@@ -72,6 +72,9 @@ export class CarritoService {
 
   pagar() {
     this.productos = [];
+    this.subtotal = 0;
+    this.IVA = 0;
+    this.total = 0;
     alert("Su compra se harealizado con éxito");
   }
 }
