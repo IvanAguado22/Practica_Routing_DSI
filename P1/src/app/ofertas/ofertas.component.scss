@@ -1,34 +1,15 @@
-.menu ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: #333;
+.nav-link{
+    color: lightgrey !important;
+    display: flex;
+    flex-direction: column;
+    align-items    : center;
+    cursor: pointer;
 }
 
-.menu li {
-  float: right;
+.navbar li a:hover {
+    color: white !important;
 }
 
-.menu li a {
-  display: flex;
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  align-items: center;
-  flex-direction: column;
-  cursor: pointer;
-  min-width: 80px;
-}
-
-.menu li a:hover:not(.active) {
-  background-color: #111;
-}
-
-.menu .active {
-  background-color: #4CAF50;
-}
 .main{
   background-image: url("https://www.escueladesarts.com/wp-content/uploads/estilismo-de-moda.jpg");
   background-color: #cccccc;
@@ -42,48 +23,21 @@
   padding: 200px;
 }
 
-#logoCorp{
-  float: left;
-  color: white;
-  text-align: center;
-  align-content: center;
-  margin-left: 25px;
-  margin-top: 25px;
-  margin-bottom: 25px;
-}
-
-#logoCorp a{
-  font-size: 50px;
-}
-
-#ofertas{
-  float: left;
-  color: white;
-  text-align: center;
-  align-content: center;
-  margin-left: 50px;
-  margin-top: 25px;
-}
-
-#ofertas p{
-  font-size: 20px;
-}
-
-#titulo{
-  font-size: 50px;
-}
-
 .categorias{
   display: flex;
   justify-content: space-evenly;
 }
 
-#titulo {
+.titulo {
   text-align: center;
   margin-left: auto;
-  font-size: 75x;
+  font-size: 75px;
   margin-top: 80px;
   margin-bottom: 50px;
+}
+
+.card{
+  margin: 25px;
 }
 
 .ofertasTable {
@@ -91,20 +45,6 @@
   flex-direction: row;
   justify-content: center;
   align-items: center;
-}
-
-.cardLeft{
-  font-size: 20px;
-  margin-right: 50px;
-}
-
-.cardMid{
-  font-size: 20px;
-  margin-right: 50px;
-}
-
-.cardRight{
-  font-size: 20px;
 }
 
 .card-title{
@@ -159,63 +99,30 @@
 }
 
 @media screen and (max-width: 1024px) {
-  #ofertas{
-  float: left;
-  color: white;
-  text-align: center;
-  align-content: center;
-}
+    #ofertas{
+    float: left;
+    color: white;
+    text-align: center;
+    align-content: center;
+  }
 
-#ofertas p{
-  font-size: 15px;
-}
+  .titulo {
+    text-align: center;
+    margin-left: auto;
+    font-size: 25px;
+    margin: 25px;
+  }
 
-#titulo{
-  font-size: 15px;
-}
+  .ofertasTable {
+    display: flex;
+    flex-direction: column;
+  }
 
-.categorias{
-  display: flex;
-  justify-content: space-evenly;
-}
+  .card-title{
+    font-size: 15px;
+  }
 
-#titulo {
-  text-align: center;
-  margin-left: auto;
-  font-size: 25px;
-  margin-top: 100px;
-  margin-bottom: 25px;
-}
-
-.ofertasTable {
-  display: flex;
-  flex-direction: column;
-}
-
-.cardLeft{
-  font-size: 15px;
-}
-
-.cardMid{
-  font-size: 15px;
-}
-
-.cardRight{
-  font-size: 15px;
-}
-
-.card-title{
-  font-size: 15px;
-}
-
-.checked {
-  color: orange;
-}
-
-.ofertasCarousel {
-  display: flex;
-  width: 50%;
-  justify-content: center;
-  margin-bottom: 25px;
-}
+  .checked {
+    color: orange;
+  }
 }

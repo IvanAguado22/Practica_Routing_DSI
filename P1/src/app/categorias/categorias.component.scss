@@ -1,33 +1,13 @@
-.menu ul {
-    list-style-type : none;
-    margin          : 0;
-    padding         : 0;
-    overflow        : hidden;
-    background-color: #333;
-}
-
-.menu li {
-    float: right;
-}
-
-.menu li a {
-    display        : flex;
-    color          : white;
-    text-align     : center;
-    padding        : 14px 16px;
-    text-decoration: none;
+.nav-link{
+    color: lightgrey !important;
+    display: flex;
+    flex-direction: column;
     align-items    : center;
-    flex-direction : column;
-    cursor         : pointer;
-    min-width      : 80px;
+    cursor: pointer;
 }
 
-.menu li a:hover:not(.active) {
-    background-color: #111;
-}
-
-.menu .active {
-    background-color: #4CAF50;
+.navbar li a:hover {
+    color: white !important;
 }
 
 .main {
@@ -41,33 +21,6 @@
     text-align         : center;
     color              : white;
     padding            : 200px;
-}
-
-#logoCorp {
-    float        : left;
-    color        : white;
-    text-align   : center;
-    align-content: center;
-    margin-left  : 25px;
-    margin-top   : 25px;
-    margin-bottom: 25px;
-}
-
-#logoCorp a {
-    font-size: 50px;
-}
-
-#ofertas {
-    float        : left;
-    color        : white;
-    text-align   : center;
-    align-content: center;
-    margin-left  : 50px;
-    margin-top   : 25px;
-}
-
-#ofertas p {
-    font-size: 20px;
 }
 
 #titulo {
@@ -111,6 +64,7 @@
     padding            : 200px;
     font-size          : 20px;
     text-decoration    : none;
+    max-width   : 100%;
 }
 
 .mid {
@@ -126,6 +80,7 @@
     padding            : 200px;
     font-size          : 20px;
     text-decoration    : none;
+    max-width   : 100%;
 }
 .mid1 {
     background-image   : url("https://ae01.alicdn.com/kf/Hd5b65a066a4a42e18c8dcdb4a7e83bf9A/Zapatos-planos-de-malla-transpirable-para-mujer-zapatillas-informales-a-la-moda-vulcanizados-para-gimnasio-2020.jpg_q50.jpg");
@@ -140,6 +95,7 @@
     padding            : 200px;
     font-size          : 20px;
     text-decoration    : none;
+    max-width   : 100%;
 }
 
 .right {
@@ -155,6 +111,7 @@
     padding            : 200px;
     font-size          : 20px;
     text-decoration    : none;
+    max-width   : 100%;
 }
 
 .footer {

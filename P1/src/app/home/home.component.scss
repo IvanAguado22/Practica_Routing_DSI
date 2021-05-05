@@ -262,18 +262,18 @@
 
     .left {
         position: flex-start;
-        width   : 90%;
+        max-width   : 100%;
     }
 
     .mid {
         position  : flex-start;
-        width     : 90%;
+        max-width   : 100%;
         margin-top: 30px;
     }
 
     .right {
         position  : flex-start;
-        width     : 90%;
+        max-width   : 100%;
         margin-top: 30px;
     }
 

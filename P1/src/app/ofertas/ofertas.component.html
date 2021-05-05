@@ -1,5 +1,5 @@
 <header>
-    <nav class="navbar navbar-expand-md bg-dark navbar-dark fixed-top">
+    <nav class="navbar navbar-expand-md bg-dark navbar-dark">
         <a class="navbar-brand" [routerLink]="['/']">T</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
             <span class="navbar-toggler-icon"></span>
@@ -34,9 +34,9 @@
     </nav>
 </header>
 
-<p id="titulo">OFERTAS FUGACES</p>
+<p class="titulo">OFERTAS FUGACES</p>
 <div class="ofertasTable">
-    <div class="cardLeft" style="width: 18rem;">
+    <div class="card" style="width: 18rem;">
         <img [src]="carritoService.oferta1.imagen" class="card-img-top" alt="...">
         <div class="card-body">
             <h5 class="card-title">{{carritoService.oferta1.nombre}}</h5>
@@ -54,7 +54,7 @@
                 ahora</button>
         </div>
     </div>
-    <div class="cardMid" style="width: 18rem;">
+    <div class="card" style="width: 18rem;">
         <img [src]="carritoService.oferta2.imagen" class="card-img-top" alt="...">
         <div class="card-body">
             <h5 class="card-title">{{carritoService.oferta2.nombre}}</h5>
@@ -73,7 +73,7 @@
                 ahora</button>
         </div>
     </div>
-    <div class="cardRight" style="width: 18rem;">
+    <div class="card" style="width: 18rem;">
         <img [src]="carritoService.oferta3.imagen" class="card-img-top" alt="...">
         <div class="card-body">
             <h5 class="card-title">{{carritoService.oferta3.nombre}}</h5>
@@ -92,9 +92,9 @@
         </div>
     </div>
 </div>
-<p id="titulo"> LIQUIDACIÓN</p>
+<p class="titulo"> LIQUIDACIÓN</p>
 <div class="ofertasCarousel">
-    <ngb-carousel>
+    <ngb-carousel style="max-width: 100%;">
         <ng-template ngbSlide>
             <div class="picsum-img-wrapper">
                 <img src="https://images.footlocker.com/is/image/FLEU/317982396731_01?wid=630&hei=630&fmt=png-alpha"
