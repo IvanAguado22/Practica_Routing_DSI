@@ -36,12 +36,12 @@
 </header>
 
 <body>
-    <mat-horizontal-stepper [linear]="false" #stepper>
-        <mat-step [stepControl]="firstFormGroup">
+    <mat-horizontal-stepper [linear]="true" #stepper>
+        <mat-step>
             <div class="flex-container-pedido">
                 <div class="flex-noResumen">
                     <h1>Tus productos</h1>
-                    <form [formGroup]="firstFormGroup">
+                    <form>
                         <ng-template matStepLabel>Vista previa</ng-template>
                         <div class="productosCarrito">
                             <ul>
@@ -55,7 +55,7 @@
                                                 <div class="card-body">
                                                     <h5 class="card-title nombreProducto">{{producto.nombre}}
                                                     </h5>
-                                                    <p class="card-text">{{producto.precio |
+                                                    <p class="card-text precioProducto">{{producto.precio |
                                                         currency:'EUR':'symbol':'1.0-1':'es'}}</p>
                                                 </div>
                                             </div>

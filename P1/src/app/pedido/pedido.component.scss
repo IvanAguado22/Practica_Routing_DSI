@@ -67,6 +67,11 @@
     padding-top: 20px;
 }
 
+.precioProducto{
+    font-size  : 20px;
+    padding-top: 20px;
+}
+
 .pagos {
     display        : flex;
     flex-direction : column;
@@ -143,5 +148,10 @@
 
     .card-radioButton {
         width: 100%;
+    }
+
+    .nombreProducto {
+        font-size  : 30px;
+        padding-top: 20px;
     }
 }

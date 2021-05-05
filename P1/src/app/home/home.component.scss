@@ -45,11 +45,12 @@
     position           : relative;
     text-align         : center;
     color              : white;
-    padding            : 200px;
+    padding            : 150px;
+    max-width   : 100%;
 }
 
 .mid {
-    background-image   : url("https://images.footlocker.com/is/image/FLEU/317135040020_01?wid=630&hei=630&fmt=png-alpha");
+    background-image   : url("https://www.mistarekos.com/wp-content/uploads/2020/05/los-mejores-trajes-de-hombre-azules-del-mercado-a-los-mejores-precios.jpg");
     background-color   : #cccccc;
     height             : 600px;
     background-position: center;
@@ -58,7 +59,8 @@
     position           : relative;
     text-align         : center;
     color              : white;
-    padding            : 200px;
+    padding            : 150px;
+    max-width   : 100%;
 }
 
 .right {
@@ -71,7 +73,12 @@
     position           : relative;
     text-align         : center;
     color              : white;
-    padding            : 200px;
+    padding            : 150px;
+    max-width   : 100%;
+}
+
+.botonCategorias{
+    min-width: 120px;
 }
 
 .footer {
