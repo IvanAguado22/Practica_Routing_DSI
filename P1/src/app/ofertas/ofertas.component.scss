@@ -1,132 +1,135 @@
-.nav-link{
-    color: lightgrey !important;
-    display: flex;
+.nav-link {
+    color         : lightgrey !important;
+    display       : flex;
     flex-direction: column;
-    align-items    : center;
-    cursor: pointer;
+    align-items   : center;
+    cursor        : pointer;
 }
 
 .navbar li a:hover {
     color: white !important;
 }
 
-.main{
-  background-image: url("https://www.escueladesarts.com/wp-content/uploads/estilismo-de-moda.jpg");
-  background-color: #cccccc;
-  height: 200px;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
-  text-align: center;
-  color: white;
-  padding: 200px;
+.main {
+    background-image   : url("https://www.escueladesarts.com/wp-content/uploads/estilismo-de-moda.jpg");
+    background-color   : #cccccc;
+    height             : 200px;
+    background-position: center;
+    background-repeat  : no-repeat;
+    background-size    : cover;
+    position           : relative;
+    text-align         : center;
+    color              : white;
+    padding            : 200px;
 }
 
-.categorias{
-  display: flex;
-  justify-content: space-evenly;
+.categorias {
+    display        : flex;
+    justify-content: space-evenly;
 }
 
 .titulo {
-  text-align: center;
-  margin-left: auto;
-  font-size: 75px;
-  margin-top: 80px;
-  margin-bottom: 50px;
+    text-align   : center;
+    margin-left  : auto;
+    font-size    : 75px;
+    margin-top   : 80px;
+    margin-bottom: 50px;
 }
 
-.card{
-  margin: 25px;
+.card {
+    margin-left: 20px;
 }
 
 .ofertasTable {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
+    display        : flex;
+    flex-direction : row;
+    justify-content: center;
+    align-items    : center;
 }
 
-.card-title{
-  font-size: 20px;
-  font-weight: bold;
+.card-title {
+    font-size  : 20px;
+    font-weight: bold;
 }
 
 .checked {
-  color: orange;
+    color: orange;
 }
 
 .ofertasCarousel {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 50px;
-}
-
-.picsum-img-wrapper{
-  text-align: center;
-}
-
-.footer{
-  text-align: center;
-  padding: 20px;
-  background: rgba(19, 35, 47, .9);
-  position: relative;
-  bottom: 0;
-}
-
-.footer ul{
-    display: flex;
-    text-align: center;
-    flex-direction: row;
+    display        : flex;
     justify-content: center;
-    padding: 0;
+    margin-bottom  : 50px;
 }
 
-.footer li{
-  list-style: none;
-  display: inline-block;
-  border-right: 3px solid white;
-  padding: 0px 7px;
-  font-size: 17px;
+.picsum-img-wrapper {
+    text-align: center;
 }
 
-.footer li:last-child{
-  border-right: none;
+.footer {
+    text-align: center;
+    padding   : 20px;
+    background: rgba(19, 35, 47, .9);
+    position  : relative;
+    bottom    : 0;
+}
+
+.footer ul {
+    display        : flex;
+    text-align     : center;
+    flex-direction : row;
+    justify-content: center;
+    padding        : 0;
+}
+
+.footer li {
+    list-style  : none;
+    display     : inline-block;
+    border-right: 3px solid white;
+    padding     : 0px 7px;
+    font-size   : 17px;
+}
+
+.footer li:last-child {
+    border-right: none;
 }
 
 .footer li a {
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
+    display        : block;
+    color          : white;
+    text-align     : center;
+    padding        : 14px 16px;
+    text-decoration: none;
 }
 
 @media screen and (max-width: 1024px) {
-    #ofertas{
-    float: left;
-    color: white;
-    text-align: center;
-    align-content: center;
-  }
+    #ofertas {
+        float        : left;
+        color        : white;
+        text-align   : center;
+        align-content: center;
+    }
 
-  .titulo {
-    text-align: center;
-    margin-left: auto;
-    font-size: 25px;
-    margin: 25px;
-  }
+    .titulo {
+        text-align : center;
+        margin-left: auto;
+        font-size  : 25px;
+        margin     : 25px;
+    }
 
-  .ofertasTable {
-    display: flex;
-    flex-direction: column;
-  }
+    .ofertasTable {
+        display       : flex;
+        flex-direction: column;
+    }
 
-  .card-title{
-    font-size: 15px;
-  }
+    .card-title {
+        font-size: 15px;
+    }
 
-  .checked {
-    color: orange;
-  }
+    .checked {
+        color: orange;
+    }
+    .picsum-img-wrapper{
+        align-self: center;
+    }
 }
