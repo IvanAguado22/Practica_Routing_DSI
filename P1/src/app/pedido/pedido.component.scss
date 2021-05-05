@@ -1,191 +1,203 @@
 .menu ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: #333;
+    list-style-type : none;
+    margin          : 0;
+    padding         : 0;
+    overflow        : hidden;
+    background-color: #333;
 }
 
 .menu li {
-  float: right;
+    float: right;
 }
 
-#ofertas{
-  float: left;
-  color: white;
-  text-align: center;
-  align-content: center;
-  margin-left: 50px;
-  margin-top: 25px;
+#ofertas {
+    float        : left;
+    color        : white;
+    text-align   : center;
+    align-content: center;
+    margin-left  : 50px;
+    margin-top   : 25px;
 }
 
-#ofertas p{
-  font-size: 20px;
+#ofertas p {
+    font-size: 20px;
 }
+
 .menu li a {
-  display: flex;
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  align-items: center;
-  flex-direction: column;
-  cursor: pointer;
-  min-width: 80px;
+    display        : flex;
+    color          : white;
+    text-align     : center;
+    padding        : 14px 16px;
+    text-decoration: none;
+    align-items    : center;
+    flex-direction : column;
+    cursor         : pointer;
+    min-width      : 80px;
 }
 
 .menu li a:hover:not(.active) {
-  background-color: #111;
+    background-color: #111;
 }
 
 .menu .active {
-  background-color: #4CAF50;
+    background-color: #4CAF50;
 }
 
-#logoCorp{
-  float: left;
-  color: white;
-  text-align: center;
-  align-content: center;
-  margin-left: 25px;
-  margin-top: 25px;
-  margin-bottom: 25px;
+#logoCorp {
+    float        : left;
+    color        : white;
+    text-align   : center;
+    align-content: center;
+    margin-left  : 25px;
+    margin-top   : 25px;
+    margin-bottom: 25px;
 }
 
-#logoCorp a{
-  font-size: 50px;
+#logoCorp a {
+    font-size: 50px;
 }
 
-#ofertas{
-  float: left;
-  color: white;
-  text-align: center;
-  align-content: center;
-  margin-left: 50px;
-  margin-top: 25px;
+#ofertas {
+    float        : left;
+    color        : white;
+    text-align   : center;
+    align-content: center;
+    margin-left  : 50px;
+    margin-top   : 25px;
 }
 
 .mat-stepper-horizontal {
-  margin-top: 8px;
+    margin-top: 8px;
 }
 
 .mat-form-field {
-  margin-top: 16px;
+    margin-top: 16px;
 }
 
-.flex-container-pedido{
-    display: flex;
+.flex-container-pedido {
+    display       : flex;
     flex-direction: row;
 }
 
-.flex-noResumen{
+.flex-noResumen {
     flex: 7;
 }
 
-.flex-Resumen{
-    flex: 3;
-    display: flex;
+.flex-Resumen {
+    flex          : 3;
+    display       : flex;
     flex-direction: column;
 }
 
-.detallesEnvio{
-    display: flex;
+.detallesEnvio {
+    display       : flex;
     flex-direction: column;
 }
 
-.envios{
-    display: flex;
+.envios {
+    display       : flex;
     flex-direction: row;
-    align-items: stretch;
-    min-width: 100%;
+    align-items   : stretch;
+    min-width     : 100%;
 }
 
-.two-fields input{
+.two-fields input {
     width: 50% !important;
 }
 
-.two-fields .mat-form-field{
-    width: 40%;
+.two-fields .mat-form-field {
+    width       : 40%;
     margin-right: 20px;
 }
 
-.mat-form-field{
+.mat-form-field {
     width: calc(80% + 20px);
 }
 
-.imagenVistaPrevia{
-  width: 80%;
+.imagenVistaPrevia {
+    width: 80%;
 }
 
-.nombreProducto{
-  font-size: 40px;
-  padding-top: 20px;
+.nombreProducto {
+    font-size  : 40px;
+    padding-top: 20px;
 }
 
-.pagos{
-    display: flex;
-    flex-direction: column;
+.pagos {
+    display        : flex;
+    flex-direction : column;
     justify-content: space-evenly;
 }
 
-.card-radioButton{
-    display: flex;
+.card-radioButton {
+    display       : flex;
     flex-direction: row;
-    align-items: center;
-    width: 40%;
-    margin-right: 20px;
+    align-items   : center;
+    width         : 40%;
+    margin-right  : 20px;
 }
 
-.productosCarrito ul{
-  padding: 0;
-  list-style-type: none;
+.productosCarrito ul {
+    padding        : 0;
+    list-style-type: none;
 }
 
-.flex-containter-precio{
-    display: flex;
+.flex-containter-precio {
+    display       : flex;
     flex-direction: column;
 }
 
-.flex-precio{
-    display: flex;
-    flex-direction: row;
+.flex-precio {
+    display        : flex;
+    flex-direction : row;
     justify-content: space-between;
-    margin: 5px;
+    margin         : 5px;
 }
 
-.footer{
-  text-align: center;
-  padding: 20px;
-  background: rgba(19, 35, 47, .9);
-  position: relative;
-  bottom: 0;
-  width: 100%;
-}
-
-.footer ul{
-    display: flex;
+.footer {
     text-align: center;
-    flex-direction: row;
+    padding   : 20px;
+    background: rgba(19, 35, 47, .9);
+    position  : relative;
+    bottom    : 0;
+    width     : 100%;
+}
+
+.footer ul {
+    display        : flex;
+    text-align     : center;
+    flex-direction : row;
     justify-content: center;
-    padding: 0;
+    padding        : 0;
 }
 
-.footer li{
-  list-style: none;
-  display: inline-block;
-  border-right: 3px solid white;
-  padding: 0px 7px;
-  font-size: 17px;
+.footer li {
+    list-style  : none;
+    display     : inline-block;
+    border-right: 3px solid white;
+    padding     : 0px 7px;
+    font-size   : 17px;
 }
 
-.footer li:last-child{
-  border-right: none;
+.footer li:last-child {
+    border-right: none;
 }
 
 .footer li a {
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
+    display        : block;
+    color          : white;
+    text-align     : center;
+    padding        : 14px 16px;
+    text-decoration: none;
+}
+
+@media screen and (max-width: 1024px) {
+    .flex-container-pedido {
+        display       : flex;
+        flex-direction: column;
+    }
+
+    .card-radioButton {
+        width: 90%;
+    }
 }
